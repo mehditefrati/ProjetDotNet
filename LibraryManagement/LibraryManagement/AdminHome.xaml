@@ -1,0 +1,22 @@
+﻿<Window x:Class="LibraryManagement.AdminHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel HorizontalAlignment="Left" Height="362" Margin="127,33,0,0" VerticalAlignment="Top" Width="655" Name="adminStackPanel">
+
+        </StackPanel>
+        <Button Content="Livres"  HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="100" Name="BtnBooks" Click="BtnBooks_Click"/>
+        <Button Content="Employés" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="100" Name="BtnEmployees" Click="BtnEmployees_Click"/>
+        <Button Content="Adhérents" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="100" Name="BtnAdherents" Click="BtnAdherents_Click"/>
+        <Button Content="Reservations" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="100" Name="BtnReservations" Click="BtnReservations_Click"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" Width="100" x:Name="BtnLogout"/>
+        <Button Content="Export" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" Width="100" x:Name="BtnExport" Click="BtnExport_Click"/>
+
+    </Grid>
+</Window>

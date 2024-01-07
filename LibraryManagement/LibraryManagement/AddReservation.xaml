@@ -1,0 +1,28 @@
+﻿<Window x:Class="LibraryManagement.AddReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement"
+        mc:Ignorable="d"
+        Title="AddReservation" Height="420" Width="333">
+    <Grid Height="383" VerticalAlignment="Top" Margin="0,0,0,-4">
+
+        <Rectangle HorizontalAlignment="Left" Height="351" Margin="20,22,0,0" Stroke="Black" VerticalAlignment="Top" Width="286" Opacity="0.705" Fill="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
+
+        <Label Content="Adherent" HorizontalAlignment="Left" Margin="31,22,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" Height="26"/>
+        <Label Content="Livre" HorizontalAlignment="Left" Margin="31,79,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Date de reservation" HorizontalAlignment="Left" Margin="31,135,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Date de retour" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Retourné" HorizontalAlignment="Left" Margin="31,244,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" Height="26" Margin="31,324,0,0" x:Name="BtnSubmit" Click="BtnSubmit_Click" VerticalAlignment="Top" Width="75"/>
+        <ComboBox HorizontalAlignment="Left" Margin="31,57,0,0" VerticalAlignment="Top" Width="262" Name="cmbAdherent" DisplayMemberPath="AdherentID" SelectedValuePath="AdherentID"/>
+        <ComboBox HorizontalAlignment="Left" Margin="32,108,0,0" VerticalAlignment="Top" Width="262" Name="cmbBook" DisplayMemberPath="Title" SelectedValuePath="BookID"/>
+        <DatePicker HorizontalAlignment="Left" Margin="31,166,0,0" VerticalAlignment="Top" Width="262" Name="dateRes"/>
+        <DatePicker HorizontalAlignment="Left" Margin="31,222,0,0" VerticalAlignment="Top" Width="262" Name="dateRet"/>
+        <ComboBox HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" Width="262" Name="cmbIsReturned">
+            <ComboBoxItem Content="true" Tag="true"/>
+            <ComboBoxItem Content="false" Tag="false"/>
+        </ComboBox>
+    </Grid>
+</Window>

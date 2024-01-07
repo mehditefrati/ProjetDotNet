@@ -1,0 +1,22 @@
+﻿<Window x:Class="LibraryManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Top" Height="39" Width="100" Grid.Row="1" Margin="0,129,0,0" Name="btnLogin" Click="btnLogin_Click"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Name="txtEmail"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,45,0,0" TextWrapping="Wrap" Text="Admin LOGIN" VerticalAlignment="Top" Height="43" Width="148" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,117,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,25,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Grid.Row="1"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" Name="txtPassword"/>
+
+    </Grid>
+</Window>
