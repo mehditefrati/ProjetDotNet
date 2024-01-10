@@ -1,0 +1,50 @@
+﻿@model IEnumerable<library.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reservation List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReservationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsReturned)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDate)
+            </td>
+            <td>
+                @item.IsReturned.ToString()
+            </td>
+            @* <td>
+                <a asp-action="Edit" asp-route-id="@item.ReservationID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ReservationID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReservationID">Delete</a>
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>
